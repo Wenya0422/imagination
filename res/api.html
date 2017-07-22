@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <ul>
+        <li ></li>
+    </ul> -->
+    <div id="write">
+        <p></p>
+    </div>
+</body>
+<script>
+    function show() {
+        var arr = new Array();
+        var data = window.location.search.split('?')[1];
+        document.getElementById("write").innerHTML = data.replace('=', ':')
+        var arrData = data.replace('=', ':')
+        console.log(arrData)
+        arr[0] = arrData
+        console.log(arr)
+    };
+    show();
+
+    setTimeout(function() {
+        location.href = '/web/imagination/'
+    }, 1000)
+</script>
+
+</html>

@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 'Microsoft YaHei', 'Helvetica', 'Arial';
+}
+li {
+  list-style: none;
+}
+.head {
+  overflow: hidden;
+}
+.head h1 {
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 60px;
+}
+.head .scores-container {
+  float: right;
+  overflow: hidden;
+}
+.head .scores-container span {
+  width: 6.5rem;
+  height: auto;
+  display: inline-block;
+  background: #bbada0;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #e0e0e0;
+  float: left;
+  padding: 0;
+  margin: 0 10px 10px 0;
+  border-radius: 5px;
+}
+.head .scores-container span i {
+  padding: 5px 0 0 0;
+  display: block;
+}
+.head .scores-container span strong {
+  font-size: 2.4rem;
+  color: #ec8815;
+  display: block;
+}
+.wordList {
+  clear: left;
+  overflow: hidden;
+  padding-left: 10px;
+  margin: 10px 0 0 0;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+}
+.wordList strong.wordCard {
+  font-weight: bold;
+  flex: .5;
+}
+.wordList ul {
+  flex: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 1rem 0;
+}
+.wordList ul li {
+  height: 3rem;
+}
+.wordList span.pResult {
+  border: 1px solid #ec8815;
+  width: 50%;
+  height: 34px;
+  border-radius: 4px;
+  float: left;
+  line-height: 34px;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+.wordList input {
+  border: 1px solid #e28e30;
+  padding-left: 10px;
+  font-size: 2rem;
+  color: #333;
+  width: 50%;
+  border-radius: 3px;
+}
+.wordList button,
+.wordList input.submit {
+  width: 4rem;
+  height: 30px;
+  border: 1px solid #9e9e9e;
+  background: rgba(193, 193, 193, 0.9);
+  border-radius: 3px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+.wordList input.submit {
+  background-color: #069cd6;
+  color: white;
+  border-color: #038cc1;
+}
+.ov {
+  overflow: hidden;
+}
+.ov .tip {
+  float: right;
+  display: block;
+  padding: 10px 30px 0 10px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  padding: 20px;
+  background-color: #bbada0;
+  grid-column-gap: 2.4%;
+  grid-row-gap: 10px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  clear: right;
+}
+.wrapper .box {
+  background-color: #cdc1b4;
+  padding: 11px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
