@@ -29,7 +29,7 @@
 
 <p class="wordList" style="padding:0px 0 0 10px; margin:10px 0 0">
     <strong>词库卡：</strong>
-    <input type="text" name="newWord" :value="result" required="required" id="resultNew">
+    <input type="text" name="newWord" v-model="result" required="required" id="resultNew">
     <!-- <button @click="deleteW">删除</button> -->
     <input type="submit" class="submit" @click="submit" value="确定">
 </p>
@@ -126,6 +126,7 @@
                     }
                 }
                 this.result = ''
+                this.writeWord = []
             },
 
             tipWord(i) {
