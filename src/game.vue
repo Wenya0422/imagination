@@ -17,7 +17,7 @@
 			<div class="wordList">
                 <strong class="wordCard">单词卡:</strong> 
                 <select class="form-control" 
-                    style="width:200px; display: inline-block; margin-right: 10px" 
+                    style="width:80%; display: inline-block; margin-left: 10px" 
                     v-model="wordMean" 
                 >
                     <template v-for="(x,index) in wordLab">
@@ -29,7 +29,8 @@
 
 <p class="wordList" style="padding:0px 0 0 10px; margin:10px 0 0">
     <strong>词库卡：</strong>
-    <input type="text" name="newWord" v-model="result" required="required" id="resultNew">
+    <input type="text" name="newWord" :value="result" required="required" id="resultNew">
+    <!-- <button @click="deleteW">删除</button> -->
     <input type="submit" class="submit" @click="submit" value="确定">
 </p>
 <!-- </form> -->
@@ -83,7 +84,7 @@
                     },
 
                 ],
-                dWords: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"]
+                dWords: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z", "W"]
 
             }
         },
@@ -93,14 +94,13 @@
                 this.dWords.sort(() => Math.random() - 0.5);
             },
 
-            chose(i) { //输出单词结果
+            chose(i) {
                 this.index = i
                 this.writeWord.push(this.dWords[this.index].toLowerCase())
                 this.result = this.writeWord.join("")
             },
 
             submit() {
-                // 判断输出的单词是否正确
                 if (this.wordMean == null) {
                     alert('主人，您还没选择要挑战的单词噢')
                 } else if (this.result == null) {
@@ -125,11 +125,14 @@
 
                     }
                 }
+                this.result = ''
             },
 
-            tipWord(i) { //单词提示
+            tipWord(i) {
                 this.result = this.wordMean
-            }
+            },
+
+
 
         },
 

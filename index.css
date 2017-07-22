@@ -64,7 +64,6 @@ li {
 }
 .wordList strong.wordCard {
   font-weight: bold;
-  flex: .5;
 }
 .wordList ul {
   flex: 1;
@@ -114,14 +113,15 @@ li {
 .ov .tip {
   float: right;
   display: block;
-  padding: 10px 30px 0 10px;
+  padding: 5px 30px 0 10px;
+  color: #ec8815;
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 18% 18% 18% 18% 18%;
+  grid-template-columns: 22% 22% 22% 22%;
   padding: 20px;
   background-color: #bbada0;
-  grid-column-gap: 2.4%;
+  grid-column-gap: 4%;
   grid-row-gap: 10px;
   border-radius: 5px;
   margin: 10px 20px;
@@ -129,7 +129,7 @@ li {
 }
 .wrapper .box {
   background-color: #cdc1b4;
-  padding: 11px;
+  padding: 6px;
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
