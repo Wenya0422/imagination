@@ -29,7 +29,6 @@
 
 <p class="wordList" style="padding:0px 0 0 10px; margin:10px 0 0">
     <strong>词库卡：</strong>
-    <!-- <span class="pResult">{{result}}</span> -->
     <input type="text" name="newWord" v-model="result" required="required" id="resultNew">
     <input type="submit" class="submit" @click="submit" value="确定">
 </p>
