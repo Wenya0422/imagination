@@ -46,8 +46,6 @@
 </template>
 <script>
     localStorage.setItem('word', 'list')
-        // localStorage.word = 'add'
-        // localStorage.list = '0'
     export default {
         data() {
             return {
@@ -123,15 +121,7 @@
                         localStorage.word = this.result
                         localStorage.list = this.score + 10
 
-                        // if (localStorage.list == NaN) {
-                        //     localStorage.lis = '0'
-                        //     this.score = parseInt(localStorage.list)
-                        // } else {
-                        //     this.score = parseInt(localStorage.list) + 10
-                        // }
-
                         this.score = parseInt(localStorage.list)
-                        console.log(this.score)
 
 
                     }
@@ -147,8 +137,6 @@
         mounted() {
             this.charater()
             this.wordLab = this.wordsList
-                // localStorage.list += 10
-                // this.score = parseInt(localStorage.list)x
 
         },
     }
